@@ -1,0 +1,133 @@
+/* Contenedor principal */
+.main {
+  width: 100%;
+  height: 100vh;
+  background-color: #f4f4f9;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+/* Título */
+.title {
+  font-family: 'Poppins', sans-serif;
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #333;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  text-align: center;
+}
+
+/* Formulario */
+.form {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  width: 100%;
+}
+
+/* Inputs */
+.input, .date {
+  border: 1px solid #ddd;
+  padding: 12px;
+  border-radius: 8px;
+  background: #fff;
+  font-size: 1rem;
+  font-family: 'Poppins', sans-serif;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+  width: 100%;
+  max-width: 250px;
+}
+
+.input:focus, .date:focus {
+  border-color: #0f78e0;
+  outline: none;
+  box-shadow: 0 0 6px rgba(15, 120, 224, 0.5);
+}
+
+/* Botón */
+.btnAdd {
+  background-color: #0f78e0;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 10px;
+  font-size: 1rem;
+  font-family: 'Poppins', sans-serif;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  margin-top: auto;
+
+}
+
+.btnAdd:hover {
+  background-color: #005bb5;
+  box-shadow: 0 4px 8px rgba(0, 91, 181, 0.3);
+}
+
+/* Div de sección */
+.secctionDivs {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  align-items: flex-start;
+  width: 100%;
+  max-width: 290px;
+}
+.middleDivs{
+  margin-left: 20px;
+
+}
+/* Date input */
+.date::-webkit-datetime-edit {
+  padding: 0;
+  color: #333;
+  font-family: 'Poppins', sans-serif;
+}
+
+.date::-webkit-calendar-picker-indicator {
+  background-color: transparent;
+  cursor: pointer;
+  border-radius: 50%;
+  padding: 5px;
+  transition: all 0.3s ease;
+}
+
+.date::-webkit-calendar-picker-indicator:hover {
+  background-color: #eee;
+}
+
+/* Lista de tareas */
+.taskList {
+  margin-top: 30px;
+  width: 100%;
+  max-width: 800px;
+  padding: 0;
+  list-style: none;
+  font-family: 'Poppins', sans-serif;
+}
+
+.taskItem {
+  margin: 10px 0;
+  padding: 15px;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  font-size: 1rem;
+  color: #333;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.taskItem:hover {
+  background-color: #f9f9f9;
+}
